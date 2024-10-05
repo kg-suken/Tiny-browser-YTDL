@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+      .popup-content {
+          width: 230px; /* ポップアップウィンドウの幅を設定 */
+          padding: 10px; /* 内側の余白を設定 */
+      }
+
+      .button-container {
+          display: flex; /* フレックスボックスを使用してボタンを横に並べる */
+      }
+
+      .button-container button {
+          margin-right: 10px; /* ボタン間の間隔を設定 */
+      }
+    </style>
+    <title>YouTubeダウンローダ</title>
+    <script src="popup.js"></script>
+</head>
+<body>
+  <center>
+    <div class="popup-content">
+        <div class="button-container">
+            <button id="video">ビデオ</button>
+            <button id="video_high">高画質ビデオ</button>
+            <button id="music">音声</button>
+        </div>
+    </div>
+    <p></p>
+  </center>
+</body>
+</html>
