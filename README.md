@@ -13,4 +13,11 @@ YT-DLP-APIのAPIと連帯したChrome拡張機能
 
 YT-DLP-API:https://github.com/kg-suken/YT-DLP-API
 
-制作:sskrc
+
+
+## 制作
+**sskrc**
+
+---
+
+今後の改良に関する提案やバグ報告は、お気軽にIssueを通してご連絡ください。
