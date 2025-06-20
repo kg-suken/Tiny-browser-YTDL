@@ -6,6 +6,8 @@ chrome://extensions/からデベロッパーモードを有効にし、「パッ
 ※Firefoxの場合はabout:debugging#/runtime/this-firefox  
 youtube.comで動画をひらき、拡張機能をクリックすることで小さいウィンドウが表示されます
 
+![image](https://github.com/user-attachments/assets/5c480c3d-4ac7-4cc8-b109-0fb6c94482c9)
+
 
 # カスタムAPIを利用する
 reach-world.netのAPIが指定されていますが、カスタムAPIを利用したい場合は以下のリポジトリをセットアップし、popup.jsのDOWNLOAD_BASE_URL変数を変更してください。  
