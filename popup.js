@@ -57,13 +57,13 @@ function setupButtonListeners(currentUrl, browserAPI) {
         let createTab;
         if (browserAPI.tabs.create.length === 1) {
           createTab = browserAPI.tabs.create({ 
-            url: `https://reach-world.net/apps/YouAPhpITube/download.php?vid=${currentUrl}&setting=${button.setting}`, 
+            url: `${DOWNLOAD_BASE_URL}?vid=${currentUrl}&setting=${button.setting}`, 
             active: false 
           });
         } else {
           createTab = new Promise((resolve, reject) => {
             browserAPI.tabs.create({ 
-              url: `https://reach-world.net/apps/YouAPhpITube/download.php?vid=${currentUrl}&setting=${button.setting}`, 
+              url: `${DOWNLOAD_BASE_URL}?vid=${currentUrl}&setting=${button.setting}`, 
               active: false 
             }, (tab) => {
               if (browserAPI.runtime.lastError) {
@@ -109,13 +109,13 @@ function setupSearchButtonListeners(searchQuery, browserAPI) {
         let createTab;
         if (browserAPI.tabs.create.length === 1) {
           createTab = browserAPI.tabs.create({ 
-            url: `https://reach-world.net/apps/YouAPhpITube/download.php?search=${searchQuery}&setting=${button.setting}`, 
+            url: `${DOWNLOAD_BASE_URL}?search=${searchQuery}&setting=${button.setting}`, 
             active: false 
           });
         } else {
           createTab = new Promise((resolve, reject) => {
             browserAPI.tabs.create({ 
-              url: `https://reach-world.net/apps/YouAPhpITube/download.php?search=${searchQuery}&setting=${button.setting}`, 
+              url: `${DOWNLOAD_BASE_URL}?search=${searchQuery}&setting=${button.setting}`, 
               active: false 
             }, (tab) => {
               if (browserAPI.runtime.lastError) {
@@ -272,3 +272,6 @@ document.addEventListener('keydown', function(e) {
 window.addEventListener('error', function(e) {
   console.error('Popup error:', e.error);
 });
+
+// ダウンロード用のベースURLを変数化
+const DOWNLOAD_BASE_URL = 'https://reach-world.net/apps/YouAPhpITube/download.php';
