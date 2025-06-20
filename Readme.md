@@ -2,8 +2,10 @@
 YT-DLP-APIのAPIと連帯したブラウザ拡張機能
 
 # 使いかた
-chrome://extensions/からデベロッパーモードを有効にし、「パッケージ化していない拡張機能を読み込む」からご利用ください  
+1.リポジトリをダウンロードし任意のディレクトリに保存    
+2.chrome://extensions/からデベロッパーモードを有効にする  
 ※Firefoxの場合はabout:debugging#/runtime/this-firefox  
+3.「パッケージ化していない拡張機能を読み込む」からご利用ください  
 youtube.comで動画をひらき、拡張機能をクリックすることで小さいウィンドウが表示されます
 
 ![image](https://github.com/user-attachments/assets/5c480c3d-4ac7-4cc8-b109-0fb6c94482c9)
